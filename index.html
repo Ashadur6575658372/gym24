@@ -35,15 +35,15 @@
     </header>
 
     <!-- Hero Section -->
-    <!-- <section class="hero hide">
+    <section class="hero hide">
       <div class="hero-content">
         <h1>Free trial session with a trainer</h1>
         <button class="cta-button">Detailed</button>
       </div>
-    </section> -->
+    </section>
 
     <!-- Advantages Section -->
-    <section class="advantages hide" id="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <h2>Reasons to join</h2>
 
@@ -85,7 +85,7 @@
             </div>
 
             <div class="advantages-content">
-              <h3> fitness zones</h3>
+              <h3>fitness zones</h3>
               <p>
                 From cardio to functional and cycle. Separate area for boxing
                 and mixed martial arts
@@ -112,16 +112,75 @@
     </section>
 
     <!-- Membership Section -->
-     <section class="membership" id="membership">
+    <section class="membership" id="membership">
       <div class="container">
         <h2>Gym membership</h2>
-        
+
         <div class="membership-grid" id="membershipPlans">
-          <!-- plans will be Inserted by Javascript -->
+          <!-- Plans will be Inserted by Javascript -->
         </div>
       </div>
-     </section>
+    </section>
 
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <!-- text -->
+          <div class="about-text">
+            <h2>About us</h2>
+            <p>
+              Gym24 is a leading fitness center located near Grushevka metro
+              station, offering over 1500 sq. m of space dedicated to
+              top-of-the-line workout equipment from leading brands such as
+              Hammer Strength, Life Fitness, and TechnoGym.
+            </p>
+            <p>
+              With affordable membership options, Gym24 is accessible to
+              everyone who wants to reach their fitness goals, whether it's
+              building strength, increasing endurance, or losing weight
+            </p>
+            <p>
+              Certified trainers at Gym24 provide expert guidance and support to
+              develop personalized workout plans tailored to each individual's
+              needs and goals.
+            </p>
+          </div>
+
+          <!-- slider with indicators -->
+          <div class="about-slider">
+
+            <!-- slider container -->
+            <div class="slider-container">
+              <div class="slider-wrapper" id="sliderWrapper">
+                <!-- img -->
+                 <img src="./images/gym-1.png" alt="">
+              </div>
+
+              <div class="slider-controls">
+                <!-- indicator -->
+                 <div class="slider-indicators" id="sliderIndicators">
+                  <!-- indicator will br inserted by JS  -->
+                   <span class="indicator"></span>
+                 </div>
+
+                 <!-- prev and next arrows -->
+                  <div class="slider-arrows">
+                    <button class="slider-arrow prev" id="prevBtn"">
+                      <img src="./images/icons/arrow-left.png" alt="">
+                    </button>
+
+                    <div class="slider-arrow next" id="nextBtn">
+                      <img src="./images/icons/arrow-right.png" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- script -->
     <script src="js/app.js"></script>
