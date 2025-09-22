@@ -59,27 +59,30 @@ const membershipPlans = [
 // Function to render membershipPlans
 
 function renderMembershipPlans() {
-
   const membershipGrid = document.getElementById("membershipPlans");
 
-  membershipGrid.innerHTML = membershipPlans.map(
-    (plan) => `
+  membershipGrid.innerHTML = membershipPlans
+    .map(
+      (plan) => `
     <div class="membership-card">
             <h3>${plan.name}</h3>
             <div class="price">${plan.price}</div>
             <ul>
-              ${
-                plan.features.map(feature => `<li>
+              ${plan.features
+                .map(
+                  (feature) => `<li>
                 <img src="/images/icons/check-icon.png" alt="check-icon">
                 <span>${feature}</span>
-              </li>`).join('')
-              }
+              </li>`
+                )
+                .join("")}
             </ul>
             <button class="buy-btn">Buy</button>
     </div>`
-  ).join('');
+    )
+    .join("");
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    renderMembershipPlans()
-})
+document.addEventListener("DOMContentLoaded", () => {
+  renderMembershipPlans();
+});
