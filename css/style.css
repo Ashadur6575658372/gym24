@@ -551,3 +551,9 @@ nav {
   }
 }
 
+/* footer section style */
+.footer{
+  background-color: #000;
+  color: white;
+  padding: 60px 0;
+}

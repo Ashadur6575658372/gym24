@@ -71,7 +71,7 @@ function renderMembershipPlans() {
               ${plan.features
                 .map(
                   (feature) => `<li>
-                <img src="/images/icons/check-icon.png" alt="check-icon">
+                <img src="./images/icons/check-icon.png" alt="check-icon">
                 <span>${feature}</span>
               </li>`
                 )
