@@ -473,6 +473,7 @@ nav {
 .container h2 {
   font-size: 48px;
   text-align: center;
+  padding-bottom: 60px;
 }
 .trainer-grid {
   display: grid;
@@ -556,4 +557,95 @@ nav {
   background-color: #000;
   color: white;
   padding: 60px 0;
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+}
+.footer-info{
+  max-width: 400px;
+}
+.footer-logo{
+  margin-bottom: 20px;
+}
+.footer-logo img{
+  width: auto;
+}
+.footer-info p{
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.footer-address h3, .footer-contact h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.footer-address p{
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-link{
+  display: flex;
+  justify-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+.contact-icon{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+
+
+.footer-social-links {
+  display: flex;
+  justify-content:flex-start;
+  gap: 15px;
+}
+.footer-social-link{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.footer-social-link img {
+  width: 18px;
+  height: 18px;
+}
+.footer-social-link:hover {
+  background-color: #5f5f5c;
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+    padding: 40px 0;
+  }
+  .footer-content{
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-contact{
+    align-items: center;
+  }
 }
